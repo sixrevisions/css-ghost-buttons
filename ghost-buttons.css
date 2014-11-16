@@ -1,0 +1,263 @@
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/*
+ * Basic Ghost Button
+ */
+.ghost-button {
+  display: inline-block;
+  width: 200px;
+  padding: 8px;
+  color: #fff;
+  border: 1px solid #fff;
+  text-align: center;
+  outline: none;
+  text-decoration: none;
+}
+.ghost-button:hover,
+.ghost-button:active {
+  background-color: #fff;
+  color: #000;
+}
+
+/*
+ * Rounded Corners
+ */
+.ghost-button-rounded-corners {
+  display: inline-block;
+  width: 200px;
+  padding: 8px;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  text-align: center;
+  outline: none;
+  text-decoration: none;
+}
+.ghost-button-rounded-corners:hover,
+.ghost-button-rounded-corners:active {
+  background-color: #fff;
+  color: #000;
+}
+
+/*
+ * Simple Transition Effect
+ */
+.ghost-button-transition {
+  display: inline-block;
+  width: 200px;
+  padding: 8px;
+  color: #fff;
+  border: 2px solid #fff;
+  text-align: center;
+  outline: none;
+  text-decoration: none;
+  -webkit-transition: background-color 0.2s ease-out, color 0.2s ease-out;
+  transition: background-color 0.2s ease-out,
+              color 0.2s ease-out;
+}
+.ghost-button-transition:hover,
+.ghost-button-transition:active {
+  background-color: #fff;
+  color: #000;
+  -webkit-transition: background-color 0.3s ease-in, color 0.3s ease-in;
+  transition: background-color 0.3s ease-in,
+              color 0.3s ease-in;
+}
+
+/*
+ * Thick Border
+ */
+.ghost-button-thick-border {
+  display: inline-block;
+  width: 200px;
+  font-weight: bold;
+  padding: 8px;
+  color: #fff;
+  border: 3px solid #fff;
+  text-align: center;
+  outline: none;
+  text-decoration: none;
+  -webkit-transition: background-color 0.2s ease-out, color 0.2s ease-out;
+  transition: background-color 0.2s ease-out,
+              color 0.2s ease-out;
+}
+.ghost-button-thick-border:hover,
+.ghost-button-thick-border:active {
+  background-color: #fff;
+  color: #000;
+  -webkit-transition: background-color 0.3s ease-in, color 0.3s ease-in;
+  transition: background-color 0.3s ease-in,
+              color 0.3s ease-in;
+}
+
+/*
+ * Semi-Transparent Fade
+ */
+.ghost-button-semi-transparent {
+  display: inline-block;
+  width: 200px;
+  padding: 8px;
+  color: #fff;
+  border: 2px solid #fff;
+  text-align: center;
+  outline: none;
+  text-decoration: none;
+  -webkit-transition: background-color 0.2s ease-out, border-color 0.2s ease-out;
+  transition: background-color 0.2s ease-out,
+              border-color 0.2s ease-out;
+}
+.ghost-button-semi-transparent:hover,
+.ghost-button-semi-transparent:active {
+  background-color: #fff; /* fallback */
+  background-color: rgba(255, 255, 255, 0.4);
+  border-color: #fff; /* fallback */
+  border-color: rgba(255, 255, 255, 0.4);
+  -webkit-transition: background-color 0.3s ease-in, border-color 0.3s ease-in;
+  transition: background-color 0.3s ease-in,
+              border-color 0.3s ease-in;
+}
+
+/*
+ * Border Color Fade
+ * Blue: #66d8ed
+ */
+.ghost-button-border-color {
+  display: inline-block;
+  width: 200px;
+  padding: 8px;
+  color: #fff;
+  border: 2px solid #fff;
+  text-align: center;
+  outline: none;
+  text-decoration: none;
+  -webkit-transition: border-color 0.3s ease-out, color 0.3s ease-out;
+  transition: border-color 0.3s ease-out,
+              color 0.3s ease-out;
+}
+.ghost-button-border-color:hover,
+.ghost-button-border-color:active {
+  color: #66d8ed;
+  border-color: #66d8ed;
+  -webkit-transition: border-color 0.4s ease-in, color 0.4s ease-in;
+  transition: border-color 0.4s ease-in,
+              color 0.4s ease-in;
+}
+
+/*
+ * Full Color Fade
+ * Purple: #9363c4
+ */
+.ghost-button-full-color {
+  display: inline-block;
+  width: 200px;
+  padding: 8px;
+  color: #fff;
+  background-color: transparent;
+  border: 2px solid #fff;
+  text-align: center;
+  outline: none;
+  text-decoration: none;
+  -webkit-transition: color 0.3s ease-out, background-color 0.3s ease-out, border-color 0.3s ease-out;
+  transition: color 0.3s ease-out,
+              background-color 0.3s ease-out,
+              border-color 0.3s ease-out;
+}
+.ghost-button-full-color:hover,
+.ghost-button-full-color:active {
+  background-color: #9363c4;
+  border-color: #9363c4;
+  color: #fff;
+  -webkit-transition:color 0.3s ease-in, background-color 0.3s ease-in, border-color 0.3s ease-in;
+  transition: color 0.3s ease-in,
+              background-color 0.3s ease-in,
+              border-color 0.3s ease-in;
+}
+
+/*
+ * Size Transition Effect
+ */
+.ghost-button-size-transition {
+  display: inline-block;
+  width: 200px;
+  height: 25px;
+  line-height: 25px;
+  margin: 0 auto;
+  padding: 8px;
+  color: #fff;
+  border: 2px solid #fff;
+  text-align: center;
+  outline: none;
+  text-decoration: none;
+  -webkit-transition: width 0.3s ease-out, height 0.3s ease-out, line-height 0.3s ease-out;
+  transition: width 0.3s ease-out,
+              height 0.3s ease-out,
+              line-height 0.3s ease-out;
+}
+.ghost-button-size-transition:hover,
+.ghost-button-size-transition:active {
+  width: 220px;
+  height: 45px;
+  line-height: 45px;
+  -webkit-transition: width 0.1s ease-in, height 0.1s ease-in, line-height 0.1s ease-in;
+  transition: width 0.1s ease-in,
+              height 0.1s ease-in,
+              line-height 0.1s ease-in;
+}
+
+/* Basic */
+body {
+  color: #fff;
+  background: #000 url(img/bg.jpg) no-repeat center center;
+  background-attachment: fixed;
+  background-size: cover;
+  font: 300 18px/22px "Raleway", sans-serif;
+}
+
+/* Typography */
+h1, h2 {
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: 300;
+}
+h1 {
+  font-size: 54px;
+  line-height: 65px;
+  letter-spacing: 0.1em;
+}
+h2 {
+  margin: 40px auto 10px auto;
+  font-size: 27px;
+  line-height: 33px;
+}
+
+/* Layout */
+.container {
+  width: 90%;
+  max-width: 960px;
+  margin: 50px auto 50px auto;
+  text-align: center;
+}
+
+/* Media Queries */
+@media (max-width: 420px) {
+  h1 {
+    font-size: 32px;
+    line-height: 38px;
+  }
+  h2 {
+    font-size: 22px;
+    line-height: 27px;
+  }
+  p {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
